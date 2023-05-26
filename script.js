@@ -52,3 +52,21 @@ $(document).ready(function(){
   });
 
 });
+
+// JavaScript code for "Go to Top" anchor
+const goToTopAnchor = document.querySelector('.go-to-top');
+
+// Show/hide the anchor based on scroll position
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    goToTopAnchor.style.display = 'block';
+  } else {
+    goToTopAnchor.style.display = 'none';
+  }
+});
+
+// Scroll to top when the anchor is clicked
+goToTopAnchor.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
