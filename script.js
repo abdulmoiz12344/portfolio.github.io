@@ -80,7 +80,9 @@ function toggleDetails() {
 
 function closePopup() {
   const popupBanner = document.querySelector('.popup-banner');
-  popupBanner.style.visibility = 'hidden';
+  popupBanner.style.display = 'none';
 }
 
+const closeBtn = document.querySelector('.close-btn');
+closeBtn.addEventListener('click', closePopup);
 
