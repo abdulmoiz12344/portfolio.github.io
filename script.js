@@ -80,6 +80,7 @@ function toggleDetails() {
 
 function closePopup() {
   const popupBanner = document.querySelector('.popup-banner');
-  popupBanner.style.display = 'none';
+  popupBanner.style.visibility = 'hidden';
 }
+
 
