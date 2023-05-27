@@ -386,6 +386,7 @@
 }
 .popup-banner {
   position: fixed;
+  visibility: visible;
   bottom: 20px;
   right: 20px;
   background-color: #333;
@@ -396,6 +397,9 @@
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 9999;
+}
+.popup-banner.hidden {
+  visibility: hidden;
 }
 
 .popup-content {
