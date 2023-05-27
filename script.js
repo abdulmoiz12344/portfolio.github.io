@@ -77,3 +77,8 @@ function toggleDetails() {
     expandBtn.textContent = 'Learn More';
   }
 }
+
+function closePopup() {
+  const popupBanner = document.querySelector('.popup-banner');
+  popupBanner.style.display = 'none';
+}
