@@ -38,20 +38,6 @@ contactForm.addEventListener('submit', (e) => {
   // Clear form fields after submission
   contactForm.reset();
 });
-// portfolio pop-up
-$(document).ready(function(){
-
-  $('.gallery').magnificPopup({
-
-      delegate:'a',
-      type:'image',
-      gallery:{
-          enabled:true
-      }
-
-  });
-
-});
 
 // JavaScript code for "Go to Top" anchor
 const goToTopAnchor = document.querySelector('.go-to-top');
