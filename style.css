@@ -196,6 +196,14 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+.overlay h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
   
   .gallery{
     min-height: auto;
