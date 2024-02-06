@@ -1,26 +1,31 @@
-// Smooth scrolling for navigation links
-const contactForm = document.getElementById('contactForm');
+document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+        var formData = new FormData(this);
 
-  // Get form values
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  // Perform form validation
-  if (!name || !email || !message) {
-    alert('Please fill in all fields');
-    return;
-  }
-
-  // Perform form submission (You can modify this code to suit your needs)
-  // Here, we're just logging the form data to the console
-  console.log('Name:', name);
-  console.log('Email:', email);
-  console.log('Message:', message);
-
-  // Clear form fields after submission
-  contactForm.reset();
-});
+        fetch(this.action, {
+            method: this.method,
+            body: formData,
+            headers: {
+                "Accept": "application/json"
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            // Handle success
+            alert("Form submitted successfully!");
+            // Optionally, clear the form fields
+            this.reset();
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            // Handle error
+            alert("There was an error submitting the form. Please try again later.");
+        });
+    });
