@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abdul Moiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+    <body>
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#aboutme">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactme">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>I AM ABDUL MOIZ</h1>
+              <p class="hero-para">An experienced UI/UX Designer, Content Writer and Web Developer</p>
+              <button type="button" class="btn btn-outline-light"><a href="#contactme">HIRE ME</a></button>
+            </div>
+          </div>
+        <section id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 col-sm-12">
+        <img src="mypicture.jpeg" alt="Profile Picture" width="45%" class="profilepic">
+                </div>
+                <div class="col-xl-8 col-md-8 col-sm-12">
+        <h4 id="aboutme">About Me</h4>
+        <p>WordPress developer and content writer here! With my expertise in WordPress development, I'll design a visually stunning and user-friendly website that exceeds 
+            your expectations. I'll craft engaging and SEO-optimized articles and blog posts that drive traffic and boost your online presence. My commitment to open 
+            communication, attention to detail, and timely delivery ensure that every project is completed to your satisfaction.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="services">
+        <h3>SERVICES</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <img src="webdevelopment.png" width="15%" class="serviceicon">
+                    <h5>Web Development</h5>
+                    <p style="text-align: center;">I adore building things from the ground up and bringing them to life in the browser</p>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <img src="uidesign.png" width="15%" class="serviceicon">
+                    <h5>UI/UX Design</h5>
+                    <p style="text-align: center;">I create clear design patterns, straightforward content structures, and considerate user interactions</p>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <img src="pencil.png" width="15%" class="serviceicon">
+                    <h5>Content Writing</h5>
+                    <p style="text-align: center;">I deliver engaging, keyword-rich articles that boost your rankings and drive traffic.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="portfolio">
+        <h3>PORTFOLIO</h3>
+        <h6>MY PRACTICE DESIGNS</h6>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Educational Website Design.png" class="d-block w-50" alt="Educational Website Design" style="margin-left: auto; margin-right: auto;">
+              </div>
+              <div class="carousel-item">
+                <img src="Fitness Website Design.png" class="d-block w-50" alt="Fitness Website Design" style="margin-left: auto; margin-right: auto;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <h3>CONTACT ME</h3>
+        <section id="contactme">
+        <form class="container" action="https://formsubmit.co/abdulmoiz.freelanc@gmail.com" method="post">
+            <div class="row">
+                <div class="col-lx-6 col-md-6 col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label" for="examplefirstname">First Name</label>
+                        <input type="text" class="form-control" id="examplefirstname" required>
+                    </div>
+                </div>
+                <div class="col-lx-6 col-md-6 col-sm-12">
+                    <div class="mb-3">
+                        <label class="form-label" for="examplelastname">Last Name</label>
+                        <input type="text" class="form-control" id="examplefirstname" required>
+                    </div>
+                </div>
+            </div>
+            <label class="form-label" for="exampleemail">Email</label>
+            <input type="email" class="form-control" id="exampleemail" required>
+            <label class="form-label" for="examplemessage">Message</label>
+            <input type="text" class="form-control" id="examplemessage" required>
+            <button type="button" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+            </form>
+            </section>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2023 Abdul Moiz. All Rights Reserved</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

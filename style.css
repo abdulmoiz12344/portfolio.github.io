@@ -1,0 +1,57 @@
+.navbar-nav {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+#aboutme {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#services {
+    background-color:lightgrey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1, h5 {
+    text-align: center;   
+}
+h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.profilepic, .serviceicon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-image{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer{
+    text-align: center;
+    margin-top: 20px;
+}
+#contactme {
+    background-color: lightgrey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+a:link {
+    text-decoration: none;
+}
+.navbar-toggler {
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-collapse {
+    text-align: center;
+}
+h6 {
+    text-align: center;
+    padding-bottom: 20px;
+}
